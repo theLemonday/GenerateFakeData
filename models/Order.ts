@@ -50,7 +50,7 @@ function createRandomOrder(
     const currentOrderCargoList = Array.from({ length: cargoNumber }, () =>
         CreateRandomCargo(MIN_CARGO_QUANTITY, MAX_CARGO_QUANTITY)
     );
-    cargoList.concat(currentOrderCargoList);
+    cargoList.push(...currentOrderCargoList);
 
     return {
         _id: faker.string.nanoid(),
