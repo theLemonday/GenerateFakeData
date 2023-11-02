@@ -31,7 +31,7 @@ export function assignReceiveOrderToCustomer(
     const customer = customers.find(
         (customer) => customer.profile.ssn === customerId
     );
-    console.log(customer);
+    // console.log(customer);
     if (customer != undefined) customer.receiveOrdersList.push(orderId);
 }
 
